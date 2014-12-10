@@ -1,0 +1,131 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+		<title>solution</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+				<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 	 <script src="js/jquery.min.js"></script>
+
+ 
+		
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	 	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+ 		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		
+	</head>
+	<body>
+ <div id="home" class="header scroll">
+	<div class="container">
+	 
+		<nav class="top-nav">
+			<ul class="top-nav">
+				<li class="active">
+					<a class="scroll" href="index.html">Hello!</a>
+				</li>
+				<li class="page-scroll">
+					<a class="scroll"  href="about.html">About us</a>
+				</li>
+					<li class="page-scroll">
+					<a class="scroll" href="portfilo.html">Protfolio</a>
+				</li>
+					<li class="page-scroll">
+					<a class="scroll" href="blog.html">Blog</a>
+				</li>
+				 
+					 
+			</ul>
+		 				<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+
+
+		</nav>
+		<div class="clearfix"> </div>
+	</div>
+
+</div>
+
+
+		<div class="about">
+			 
+				<div class="about-head">
+					<h1>About us</h1>
+					<span> </span>
+				</div>
+				 
+				<div class="about-time-line">
+					<li>
+							<div class="cbp_tmicon img1"> </div>
+							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
+								<h2>July 2010 Our Humble Beginnings</h2>
+								<p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon1 img2"> </div>
+							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
+								<h2>January 2011 Facing Startup Battles </h2>
+								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+							</div>
+					</li><br />
+					<li>
+							<div class="cbp_tmicon2 img3"> </div>
+							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
+								<h2>December 2012 Enter The Dark Days </h2>
+								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni.</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon3 img4"> </div>
+							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
+								<h2>January 2013Our Triumph </h2>
+								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean.</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon4 img5"> </div>
+					</li>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+				 
+			 
+		</div>
+
+
+
+
+
+ 		 
+	</body>
+</html>
+
